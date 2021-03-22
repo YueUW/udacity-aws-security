@@ -1,0 +1,8 @@
+Provide recommendations on how to remediate the vulnerabilities.
+
+Problem:
+On instance i-04403449c64062241, TCP port 22 which is associated with 'SSH' is reachable from the internet
+On instance i-04403449c64062241, UDP port 22 which is associated with 'LDAP' is reachable from the internet
+
+Solution:
+The best practice would be to restrict the access to outside world by restricting IP range and keep the admin ports like 22 open to admin users only.

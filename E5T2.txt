@@ -1,0 +1,11 @@
+1. Identify tools that will allow you to do the following: a. Scan infrastructure as code templates. b. Scan AMI’s or containers for OS vulnerabilities. c. Scan an AWS environment for cloud configuration vulnerabilities.
+
+a. Regula
+b. Anchore Engine
+c. AWS Config
+
+2. For each tool - identify an example compliance violation or vulnerability which it might expose.
+
+a. For example, in AWS EC2 service, regula has rule name called 'ec2_t2_only' to restrict instances to a whitelist of instance types 
+b. For example, it can check if the image has any know CVE vulnerabilities. 
+c. For example, it can check that your Amazon S3 bucket either has S3 default encryption enabled (named 's3-bucket-server-side-encryption-enabled')

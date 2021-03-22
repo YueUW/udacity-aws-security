@@ -1,0 +1,9 @@
+Text file identifying 2 poor security practices with justification
+
+1. Problem: Both public and private subnet network ACL rules allow all traffic on all ports from all ports.
+
+Solution: Network ACL rules should be used to minimise the available network connectivity to reduce the traffic that can be sent to and from the subnet. 
+
+2. Problem: All S3 buckets are accessible from the application server.
+
+Solution: Policy should define the specific bucket(Free Recipe) that should be accessible from the application server.

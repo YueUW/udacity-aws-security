@@ -1,0 +1,12 @@
+1. Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet.
+
+Answer:
+a. use AWS system manager to access the instance instead of directly calling the key file
+b. restrict the IP range of port 22 which communicates with the server
+
+
+2. Neither instance should have had access to the secret recipes bucket; even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
+
+Answer:
+a. define the policy with least priviledges for general user to access Free Recipe bucket with only necessary priviledge (for example, read only)
+b. enable server-side encryption in S3 bucket
